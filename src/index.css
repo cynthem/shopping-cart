@@ -1,3 +1,33 @@
+html,
+body,
+#root,
+.App,
+.home {
+  height: 100%;
+}
+
 body {
   margin: 0;
+}
+
+.home {
+  position: relative;
+}
+
+.home::before {
+  content: "";
+  background-image: url('./assets/images/homeBackground.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+.home-header {
+  position: relative;
+  color: #5D5F71;
 }
