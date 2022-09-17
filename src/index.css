@@ -80,6 +80,11 @@ body {
   margin: 0;
 }
 
+.home-img {
+  position: relative;
+  width: 25px;
+}
+
 .home-subheader {
   position: relative;
   color: rgb(90, 37, 0);
