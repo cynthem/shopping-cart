@@ -49,8 +49,7 @@
 
 html,
 body,
-#root,
-.App {
+#root {
   height: 100%;
   font-family: 'Quicksand', sans-serif;
 }
@@ -60,6 +59,26 @@ body {
   box-sizing: border-box;
   cursor: default;
 }
+
+.App {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 70px auto;
+}
+
+
+/* HEADER */
+
+.header {
+  display: flex;
+}
+
+.header-navbar {
+  display: flex;
+}
+
+
+/* HOME */
 
 .home {
   position: relative;
