@@ -10,7 +10,9 @@ const Home = () => {
                 </a>
             </h1>
             <h2 className="home-subheader">Trade stress for good vibes and self-care</h2>
-            <button className="home-btn">Visit the Shop</button>
+            <a href="#/shop">
+                <button className="home-btn">Visit the Shop</button>
+            </a>
         </div>
     )
 }
