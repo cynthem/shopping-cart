@@ -40,6 +40,13 @@
        url('./assets/fonts/quicksand/quicksand-v30-latin-700.svg#Quicksand') format('svg'); /* Legacy iOS */
 }
 
+@keyframes spin {
+  25% {transform: rotate(90deg);}
+  50% {transform: rotate(180deg);}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(360deg);}
+}
+
 html,
 body,
 #root,
@@ -87,6 +94,10 @@ body {
   width: 25px;
 }
 
+.home-img:hover {
+  animation: spin 0.5s linear;
+}
+
 .home-subheader {
   position: relative;
   color: rgb(90, 37, 0);
@@ -109,6 +120,10 @@ body {
   box-shadow: -5px 5px 4px #d26d00;
   margin-left: 228px;
   margin-top: 120px;
+}
+
+.home-btn:hover {
+  background-color: rgb(210, 109, 0, 0.2);
 }
 
 .home-btn:active {
