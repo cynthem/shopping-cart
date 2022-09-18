@@ -64,6 +64,7 @@ body {
   background-image: url('./assets/images/homeBackground.jpg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -98,6 +99,7 @@ body {
   position: relative;
   font-family: 'Quicksand', sans-serif;
   font-size: 1.75rem;
+  color: rgb(90, 37, 0);
   background: none;
   outline: none;
   cursor: pointer;

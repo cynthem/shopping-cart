@@ -5,9 +5,11 @@ const Home = () => {
     return (
         <div className="home">
             <h1 className="home-header">ChillOut Co
-                <img className="home-img" alt="Flower icon" src={flowerIcon} />
+                <a href="https://github.com/doozles411" target="_blank" ref="noopener noreferrer">
+                    <img className="home-img" alt="Flower icon" src={flowerIcon} />
+                </a>
             </h1>
-            <h2 className="home-subheader">Trade stress for good vibes</h2>
+            <h2 className="home-subheader">Trade stress for good vibes and self-care</h2>
             <button className="home-btn">Visit the Shop</button>
         </div>
     )
