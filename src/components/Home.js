@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import flowerIcon from '../assets/images/flowerIcon.png';
 
 const Home = () => {
@@ -10,9 +11,9 @@ const Home = () => {
                 </a>
             </h1>
             <h2 className="home-subheader">Trade stress for good vibes and self-care</h2>
-            <a href="#/shop">
+            <Link to="/shop">
                 <button className="home-btn">Visit the Shop</button>
-            </a>
+            </Link>
         </div>
     )
 }
