@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import uniqid from 'uniqid';
 import Header from './components/Header';
 import Home from './components/Home';
 import Shop from './components/Shop';
 import Cart from './components/Cart';
-import productList from './productList';
 import Products from './components/Products';
+import productList from './productList';
 
 function App() {
     const [cart, setCart] = useState([]);
@@ -45,7 +46,15 @@ function App() {
                         path="/shop" 
                         element={
                             <Shop 
-                                handleAddToCart={handleAddToCart}
+                                {...productList.map((e) => {
+                                    return (
+                                      <Products 
+                                          key={uniqid()}
+                                          e={e}
+                                          handleAddToCart={handleAddToCart}
+                                      />
+                                    )
+                                })}
                             />
                         } 
                     />
