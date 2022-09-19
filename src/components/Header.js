@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import basketIcon from '../assets/images/basketIcon.png';
 
-const Header = () => {
+const Header = ({ productNum }) => {
     return (
         <div className="header">
             <div className="header-container">
@@ -11,7 +11,7 @@ const Header = () => {
                     <Link className="header-shop" to="/shop">Shop</Link>
                     <Link className="basket-icon" to="/cart">
                         <img className="basket-icon" alt="Basket" src={basketIcon} />
-                        <p className="basket-num">1</p>
+                        {productNum > 0 && <p className="basket-num">{productNum}</p>}
                     </Link>
                 </div>
                 <div className="header-title">

@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Shop from './components/Shop';
 import Cart from './components/Cart';
+import productList from './productList';
+import Products from './components/Products';
 
 function App() {
     const [cart, setCart] = useState([]);
@@ -12,7 +14,7 @@ function App() {
 
     useEffect(() => {
       let price = 0;
-      cart.forEach((e) => (price += e.quantity * e.product.price));
+      cart.forEach(item => (price += item.quantity * item.product.price));
       setPriceTotal(price);
     }, [productNum]);
 
@@ -39,8 +41,27 @@ function App() {
                 <Header productNum={productNum} />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/shop" element={<Shop />} />
-                    <Route path="/cart" element={<Cart />} />
+                    <Route 
+                        path="/shop" 
+                        element={
+                            <Shop 
+                                handleAddToCart={handleAddToCart}
+                            />
+                        } 
+                    />
+                    <Route 
+                      path="/cart" 
+                      element={
+                          <Cart 
+                              cart={cart}
+                              setCart={setCart}
+                              productNum={productNum}
+                              setProductNum={setProductNum}
+                              priceTotal={priceTotal}
+                              setPriceTotal={setPriceTotal}
+                          />
+                      } 
+                    />
                 </Routes>
             </BrowserRouter>
         </div>
