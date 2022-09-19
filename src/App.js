@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import uniqid from 'uniqid';
 import Header from './components/Header';
 import Home from './components/Home';
 import Shop from './components/Shop';
 import Cart from './components/Cart';
-import Products from './components/Products';
-import productList from './productList';
 
 function App() {
     const [cart, setCart] = useState([]);
@@ -15,7 +12,7 @@ function App() {
 
     useEffect(() => {
       let price = 0;
-      cart.forEach(item => (price += item.quantity * item.product.price));
+      cart.forEach(e => (price += e.quantity * e.product.price));
       setPriceTotal(price);
     }, [productNum]);
 
@@ -42,22 +39,7 @@ function App() {
                 <Header productNum={productNum} />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route 
-                        path="/shop" 
-                        element={
-                            <Shop 
-                                {...productList.map((e) => {
-                                    return (
-                                      <Products 
-                                          key={uniqid()}
-                                          e={e}
-                                          handleAddToCart={handleAddToCart}
-                                      />
-                                    )
-                                })}
-                            />
-                        } 
-                    />
+                    <Route path="/shop" element={<Shop handleAddToCart={handleAddToCart} />} />
                     <Route 
                       path="/cart" 
                       element={
