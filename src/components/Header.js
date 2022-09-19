@@ -11,6 +11,7 @@ const Header = () => {
                     <Link className="header-shop" to="/shop">Shop</Link>
                     <Link className="basket-icon" to="/cart">
                         <img className="basket-icon" alt="Basket" src={basketIcon} />
+                        <p className="basket-num">1</p>
                     </Link>
                 </div>
                 <div className="header-title">

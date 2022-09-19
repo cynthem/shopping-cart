@@ -109,6 +109,23 @@ body {
 .basket-icon {
   width: 25px;
   transition: transform 0.25s linear;
+  position: relative;
+}
+
+.basket-num {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  position: absolute;
+  margin: 0;
+  background-color: #d26d00;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  top: 25px;
+  left: 12px;
 }
 
 .header-home:hover,
