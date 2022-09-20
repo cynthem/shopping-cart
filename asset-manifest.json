@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.35cb4c8d.css",
+    "main.js": "/shopping-cart/static/js/main.0185cb55.js",
+    "static/media/homeBackground.jpg": "/shopping-cart/static/media/homeBackground.04de1241446d88dd1513.jpg",
+    "static/media/coloring.jpg": "/shopping-cart/static/media/coloring.8fbd4448ab7ec8886372.jpg",
+    "static/media/silk.jpg": "/shopping-cart/static/media/silk.82cdf6e02871b93cea97.jpg",
+    "static/media/donuts.jpg": "/shopping-cart/static/media/donuts.61b6dbb05b16e811f6e3.jpg",
+    "static/media/pacifico-v22-latin-regular.svg": "/shopping-cart/static/media/pacifico-v22-latin-regular.d0dc93eee3c6fe13a60a.svg",
+    "static/media/hugs.jpg": "/shopping-cart/static/media/hugs.00103ef9931824c3383e.jpg",
+    "static/media/quicksand-v30-latin-700.svg": "/shopping-cart/static/media/quicksand-v30-latin-700.0ae7e3bbbe88e176b907.svg",
+    "static/media/quicksand-v30-latin-regular.svg": "/shopping-cart/static/media/quicksand-v30-latin-regular.0657548d61d10de5c9dd.svg",
+    "static/media/pacifico-v22-latin-regular.ttf": "/shopping-cart/static/media/pacifico-v22-latin-regular.09c6a46b4fb94869237c.ttf",
+    "static/media/headphones.jpg": "/shopping-cart/static/media/headphones.76a70bb642c55a087da7.jpg",
+    "static/media/assistant.jpg": "/shopping-cart/static/media/assistant.f43d62c3e82f3c43a145.jpg",
+    "static/media/therapy.jpg": "/shopping-cart/static/media/therapy.482aabe2b8108894efdd.jpg",
+    "static/media/voodoo.jpg": "/shopping-cart/static/media/voodoo.747d44848018aaf60b45.jpg",
+    "static/media/bath.jpg": "/shopping-cart/static/media/bath.9179a42678bef4160b02.jpg",
+    "static/media/massage.jpg": "/shopping-cart/static/media/massage.bdae8fc8ddc788f3618e.jpg",
+    "static/media/kittens.jpg": "/shopping-cart/static/media/kittens.8bd020f16047c476b72e.jpg",
+    "static/media/pacifico-v22-latin-regular.woff": "/shopping-cart/static/media/pacifico-v22-latin-regular.baf5b9ef0378956997be.woff",
+    "static/media/pacifico-v22-latin-regular.eot": "/shopping-cart/static/media/pacifico-v22-latin-regular.661da5aaa6572c464373.eot",
+    "static/media/scalp.jpg": "/shopping-cart/static/media/scalp.158a48fbb583e04e2985.jpg",
+    "static/media/pacifico-v22-latin-regular.woff2": "/shopping-cart/static/media/pacifico-v22-latin-regular.f36bb0347eecd87d78af.woff2",
+    "static/media/quicksand-v30-latin-regular.ttf": "/shopping-cart/static/media/quicksand-v30-latin-regular.79d63d7f5e00e4ee7e65.ttf",
+    "static/media/flowerIcon.png": "/shopping-cart/static/media/flowerIcon.96992bcb65f9400ad410.png",
+    "static/media/quicksand-v30-latin-700.ttf": "/shopping-cart/static/media/quicksand-v30-latin-700.58000ecc1c46e48c9623.ttf",
+    "static/media/basketIcon.png": "/shopping-cart/static/media/basketIcon.6e67979586fcc2455891.png",
+    "static/media/quicksand-v30-latin-regular.woff": "/shopping-cart/static/media/quicksand-v30-latin-regular.93407d2bd8362bcdd29f.woff",
+    "static/media/quicksand-v30-latin-700.woff": "/shopping-cart/static/media/quicksand-v30-latin-700.d4ba21bbc6cc9d032ef5.woff",
+    "static/media/quicksand-v30-latin-regular.eot": "/shopping-cart/static/media/quicksand-v30-latin-regular.02610ae9e00af06fc7fc.eot",
+    "static/media/quicksand-v30-latin-700.eot": "/shopping-cart/static/media/quicksand-v30-latin-700.5a99e47e7d808d24873d.eot",
+    "static/media/quicksand-v30-latin-regular.woff2": "/shopping-cart/static/media/quicksand-v30-latin-regular.cef2e5802d843cf31dba.woff2",
+    "static/media/quicksand-v30-latin-700.woff2": "/shopping-cart/static/media/quicksand-v30-latin-700.81492e5c850f70b1d3cc.woff2",
+    "index.html": "/shopping-cart/index.html",
+    "main.35cb4c8d.css.map": "/shopping-cart/static/css/main.35cb4c8d.css.map",
+    "main.0185cb55.js.map": "/shopping-cart/static/js/main.0185cb55.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35cb4c8d.css",
+    "static/js/main.0185cb55.js"
+  ]
+}
