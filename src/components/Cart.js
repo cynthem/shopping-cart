@@ -50,7 +50,6 @@ const Cart = ({
                     </div>
                     {cart.map((item) => {
                         if (item.quantity === 0) return handleDelete(item);
-                        {console.log(item)}
                         return (
                             <div className="cart-product" key={uniqid()}>
                                 <img className="cart-product-img" src={item.product.image} alt={item.product.name} />
@@ -81,7 +80,7 @@ const Cart = ({
                         )
                     })}
                     <p className="cart-products-total">{`Cart Total: $${priceTotal.toFixed(2)}`}</p>
-                    <Link className="cart-products-link" to="/shop">
+                    <Link className="cart-products-link" to="/ordered">
                         <button className="order-btn">Order Now</button>
                     </Link>
                 </div>
