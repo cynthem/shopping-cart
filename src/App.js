@@ -15,17 +15,17 @@ function App() {
 
   useEffect(() => {
     let price = 0;
-    cart.forEach(e => {
-      price += e.quantity * e.product.price;
+    cart.forEach(item => {
+      price += item.quantity * item.product.price;
     });
     setPriceTotal(price);
   }, [productNum]);
 
-  const handleAddToCart = (e) => {
+  const handleAddToCart = (obj) => {
     let inCart = false;
     if (cart.length > 0) {
       cart.forEach((item) => {
-        if (item.product.name === e.name) {
+        if (item.product.name === obj.name) {
           item.quantity += 1;
           setProductNum(productNum + 1);
           inCart = true;
@@ -33,7 +33,7 @@ function App() {
       });
     }
     if (!inCart) {
-      setCart([...cart, { product: e, quantity: 1 }]);
+      setCart([...cart, { product: obj, quantity: 1 }]);
       setProductNum(productNum + 1);
     }
   }
@@ -50,7 +50,7 @@ function App() {
               <Shop>
                 {productList.map((product) => {
                   return (
-                    <div className="product" key={uniqid()}>
+                    <div className="product" key={uniqid()} product={product}>
                       <img className="product-img" alt={product.name} src={product.image} />
                       <div className="product-info">
                         <h3 className="product-title">{product.name}</h3>
@@ -59,7 +59,7 @@ function App() {
                       <p className="product-description">{product.description}</p>
                       <button 
                         className="add-cart-btn"
-                        onClick={(e) => handleAddToCart(e)}
+                        onClick={() => handleAddToCart(product)}
                       >
                         Add to Cart
                       </button>

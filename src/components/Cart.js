@@ -50,6 +50,7 @@ const Cart = ({
                     </div>
                     {cart.map((item) => {
                         if (item.quantity === 0) return handleDelete(item);
+                        {console.log(item)}
                         return (
                             <div className="cart-product" key={uniqid()}>
                                 <img className="cart-product-img" src={item.product.image} alt={item.product.name} />
