@@ -78,6 +78,7 @@ body {
   position: sticky;
   top: 0;
   background: white;
+  z-index: 2;
 }
 
 .header-container {
@@ -391,6 +392,7 @@ body {
   width: 20px;
   position: absolute;
   right: 0;
+  cursor: pointer;
 }
 
 .cart-products-total {
