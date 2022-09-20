@@ -11,7 +11,7 @@ const Ordered = () => {
             <Link className="order-img-link" to="/">
                 <img className="order-img" src={flowerIcon} alt="Flower icon" />     
             </Link>
-            <p className="order-text-3">May you live peacefully with a healthy amount of stress.</p>
+            <p className="order-text-3">May you live a good life with a healthy amount of stress.</p>
         </div>
     )
 }
