@@ -80,7 +80,9 @@ const Cart = ({
                         )
                     })}
                     <p className="cart-products-total">{`Cart Total: $${priceTotal.toFixed(2)}`}</p>
-                    <button className="order-btn">Order Now</button>
+                    <Link className="cart-products-link" to="/shop">
+                        <button className="order-btn">Order Now</button>
+                    </Link>
                 </div>
             )}
         </div>
