@@ -31,11 +31,13 @@ const Cart = ({
 
     return (
         <div className="cart">
-            <h2>Your Cart</h2>
+            <h2 className="cart-title">Your Cart</h2>
             {productNum < 1 && (
                 <div className="cart-empty">
-                    <p>There are currenly no items in your cart.</p>
-                    <Link to="/shop">Continue Shopping</Link>
+                    <p className="cart-empty-text">There are currenly no items in your cart.</p>
+                    <Link className="empty-cart-link" to="/shop">
+                        <button className="cart-shop-btn">Continue Shopping</button>
+                    </Link>
                 </div>
             )}
             {productNum > 0 && (
