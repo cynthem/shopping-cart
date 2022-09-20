@@ -1,14 +1,14 @@
 import React, { useCallback } from "react";
 import { Link } from "react-router-dom";
 import uniqid from 'uniqid';
+import trashIcon from '../assets/images/trashIcon.png';
 
 const Cart = ({
     cart,
     setCart,
     productNum,
     setProductNum,
-    priceTotal,
-    setPriceTotal
+    priceTotal
 }) => {
 
     const handleIncrease = (e) => {
@@ -55,10 +55,31 @@ const Cart = ({
                                 <img className="cart-product-img" src={item.product.image} alt={item.product.name} />
                                 <p className="cart-product-name">{item.product.name}</p>
                                 <p className="cart-product-price">{`$${item.product.price}`}</p>
+                                <div className="cart-product-quantity">
+                                    <button 
+                                        className="quantity-decrease"
+                                        onClick={() => handleDecrease(item)}
+                                    >
+                                        -
+                                    </button>
+                                    <p className="quantity-total">{item.quantity}</p>
+                                    <button 
+                                        className="quantity-increase"
+                                        onClick={() => handleIncrease(item)}
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                                <img 
+                                    className="trash-icon" 
+                                    src={trashIcon} 
+                                    alt="Trash icon"
+                                    onClick={() => handleDelete(item)}
+                                />
                             </div>
                         )
                     })}
-                    <p className="cart-products-total">Cart Total:</p>
+                    <p className="cart-products-total">{`Cart Total: $${priceTotal.toFixed(2)}`}</p>
                     <button className="order-btn">Order Now</button>
                 </div>
             )}
