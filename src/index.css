@@ -217,6 +217,7 @@ body {
 .shop {
   display: flex;
   flex-direction: column;
+  gap: 80px;
   padding: 30px 0;
 }
 
@@ -226,6 +227,8 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  padding-bottom: 80px;
+  border-bottom: 4px dotted #5a2500;
 }
 
 .product-info {
@@ -243,7 +246,7 @@ body {
 
 .product-price {
   margin-bottom: 0;
-  color: rgb(90, 37, 0);
+  color: #5a2500;
 }
 
 .product-description {
@@ -261,4 +264,9 @@ body {
   border: none;
   outline: none;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-cart-btn:active {
+  transform: translate(-1px, 1px);
 }
