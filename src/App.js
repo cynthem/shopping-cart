@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <Header productNum={productNum} />
         <Routes>
           <Route path="/" element={<Home />} />
