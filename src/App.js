@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Shop from './components/Shop';
 import Cart from './components/Cart';
+import Ordered from './components/Ordered';
 
 function App() {
     const [cart, setCart] = useState([]);
@@ -53,6 +54,7 @@ function App() {
                           />
                       } 
                     />
+                    <Route path="/ordered" element={<Ordered />} />
                 </Routes>
             </BrowserRouter>
         </div>
