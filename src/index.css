@@ -231,4 +231,34 @@ body {
 .product-info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.product-title {
+  font-family: 'Pacifico', serif;
+  font-size: 1.75rem;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.product-price {
+  margin-bottom: 0;
+  color: rgb(90, 37, 0);
+}
+
+.product-description {
+  line-height: 1.5;
+}
+
+.add-cart-btn {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  width: 130px;
+  padding: 8px 0;
+  background-color: #d26d00;
+  color: white;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 5px;
 }

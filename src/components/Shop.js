@@ -18,7 +18,7 @@ const Shop = ({ handleAddToCart }) => {
                             className="add-cart-btn"
                             onClick={(e) => handleAddToCart(e)}
                         >
-                            Add to Basket
+                            Add to Cart
                         </button>
                     </div>
                 )
