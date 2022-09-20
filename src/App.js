@@ -29,7 +29,7 @@ function App() {
         });
       }
       if (!inCart) {
-        setCart([...cart, { product: e, quantity: 1}]);
+        setCart([...cart, { product: e, quantity: 1 }]);
         setProductNum(productNum + 1);
       }
     }

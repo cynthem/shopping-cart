@@ -5,7 +5,7 @@ import uniqid from 'uniqid';
 const Shop = ({ handleAddToCart }) => {
     return (
         <div className="shop">
-            {productList.map(product => {
+            {productList.map((product, e) => {
                 return (
                     <div className="product" key={uniqid()}>
                         <img className="product-img" alt={product.name} src={product.image} />
@@ -16,6 +16,7 @@ const Shop = ({ handleAddToCart }) => {
                         <p className="product-description">{product.description}</p>
                         <button 
                             className="add-cart-btn"
+                            e={e}
                             onClick={(e) => handleAddToCart(e)}
                         >
                             Add to Cart
