@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/shopping-cart">
         <Header productNum={productNum} />
         <Routes>
           <Route path="/shopping-cart" element={<Home />} />
