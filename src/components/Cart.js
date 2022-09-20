@@ -1,5 +1,6 @@
 import React, { useCallback } from "react";
 import { Link } from "react-router-dom";
+import uniqid from 'uniqid';
 
 const Cart = ({
     cart,
@@ -42,7 +43,23 @@ const Cart = ({
             )}
             {productNum > 0 && (
                 <div className="cart-products">
-                    cart products
+                    <div className="cart-products-header">
+                        <p className="cart-products-name">Products</p>
+                        <p className="cart-products-price">Price</p>
+                        <p className="cart-products-quantity">Quantity</p>
+                    </div>
+                    {cart.map((item) => {
+                        if (item.quantity === 0) return handleDelete(item);
+                        return (
+                            <div className="cart-product" key={uniqid()}>
+                                <img className="cart-product-img" src={item.product.image} alt={item.product.name} />
+                                <p className="cart-product-name">{item.product.name}</p>
+                                <p className="cart-product-price">{`$${item.product.price}`}</p>
+                            </div>
+                        )
+                    })}
+                    <p className="cart-products-total">Cart Total:</p>
+                    <button className="order-btn">Order Now</button>
                 </div>
             )}
         </div>
