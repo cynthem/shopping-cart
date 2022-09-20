@@ -1,8 +1,7 @@
 import React from "react";
-import productList from "../productList";
 import uniqid from 'uniqid';
 
-const Shop = ({ handleAddToCart }) => {
+const Shop = ({ handleAddToCart, productList }) => {
     return (
         <div className="shop">
             {productList.map((product, e) => {
