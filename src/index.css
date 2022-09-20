@@ -454,7 +454,7 @@ body {
 @media screen and (max-width: 500px) {
 
   .App {
-    grid-template-rows: 40px auto;
+    grid-template-rows: 50px auto;
   }
 
   .header {
@@ -462,7 +462,7 @@ body {
   }
 
   .header-container {
-    height: 40px;
+    height: 50px;
   }
 
   .header-navbar {
@@ -500,6 +500,10 @@ body {
     width: 15px;
   }
 
+  .home-img:hover {
+    animation: none;
+  }
+
   .home-subheader {
     margin: 0 50px 0 30px;
     padding-top: 30px;
@@ -518,7 +522,7 @@ body {
   }
   
   .product {
-    width: 280px;
+    width: 300px;
     padding-bottom: 50px;
   }
 
@@ -563,11 +567,11 @@ body {
   }
 
   .cart-products-price {
-    right: 140px;
+    right: 125px;
   }
   
   .cart-products-quantity {
-    right: 40px;
+    right: 25px;
   }
 
   .trash-icon {
@@ -579,23 +583,23 @@ body {
   }
   
   .cart-product-img {
-    width: 100px;
-    padding-right: 10px;
+    width: 90px;
+    padding-right: 6px;
   }
 
   .cart-product-name {
     font-size: 0.8rem;
-    width: 120px;
+    width: 80px;
   }
 
   .cart-product-price {
-    right: 140px;
+    right: 125px;
     font-size: 0.8rem;
   }
   
   .cart-product-quantity {
-    gap: 4px;
-    right: 45px;
+    gap: 1px;
+    right: 25px;
     font-size: 1rem;
   }
   
@@ -627,5 +631,9 @@ body {
   
   .order-img {
     margin-top: 20px;
+  }
+
+  .order-img:hover {
+    animation: none;
   }
 }
