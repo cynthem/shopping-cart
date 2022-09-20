@@ -1,12 +1,13 @@
 import React from "react";
 import productList from "../productList";
+import uniqid from 'uniqid';
 
 const Shop = ({ handleAddToCart }) => {
     return (
         <div className="shop">
             {productList.map(product => {
                 return (
-                    <div className="product">
+                    <div className="product" key={uniqid()}>
                         <img className="product-img" alt={product.name} src={product.image} />
                         <div className="product-info">
                             <h3 className="product-title">{product.name}</h3>
