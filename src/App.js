@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     let price = 0;
     cart.forEach(e => {
-      price += e.quantity * e.product.price
+      price += e.quantity * e.product.price;
     });
     setPriceTotal(price);
   }, [productNum]);
