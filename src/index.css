@@ -354,16 +354,37 @@ body {
   position: relative;
 }
 
+.cart-product-img {
+  width: 150px;
+  padding-right: 35px;
+}
+
 .cart-product-price {
   position: absolute;
-  right: 235px;
+  right: 270px;
 }
 
 .cart-product-quantity {
   display: flex;
   align-items: center;
+  gap: 8px;
   position: absolute;
-  right: 110px;
+  right: 100px;
+  font-size: 1.1rem;
+}
+
+.quantity-decrease,
+.quantity-increase {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.quantity-decrease {
+  font-size: 1.5rem;
+  padding-bottom: 4px;
 }
 
 .trash-icon {
@@ -379,6 +400,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: -1px;
+  font-weight: 700;
 }
 
 .cart-products-link {

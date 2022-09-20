@@ -28,8 +28,8 @@ const productList = [
     },
     {
         name: "Free Grandma Hugs",
-        price: "??",
-        rate: "gas money",
+        price: 0,
+        rate: "(gas money)",
         image: hugs,
         description: "Hard day at work? Grandma will make it better with one of her famous hugs! Depending on how rough the day was, she might lend an ear to your problems and console you (plus more hugs!). This service is free but Grandma asks that you provide gas money and maybe some milk for the cookies she plans to bring."
     },
