@@ -1,20 +1,27 @@
 import React from "react";
-import Products from './Products';
-import uniqid from 'uniqid';
-
+import productList from "../productList";
 
 const Shop = ({ handleAddToCart }) => {
-    
-
     return (
         <div className="shop">
-            {/*<img className="product-img" alt={products.name} src={products.image} />
-            <div className="product-info">
-                <h3 className="product-title">{products.name}</h3>
-                <p className="product-price">{`${products.price} ${products.rate}`}</p>
-            </div>
-            <p className="product-description">{products.description}</p>
-            <button className="add-cart-btn">Add to Basket</button>*/}
+            {productList.map(product => {
+                return (
+                    <div className="product">
+                        <img className="product-img" alt={product.name} src={product.image} />
+                        <div className="product-info">
+                            <h3 className="product-title">{product.name}</h3>
+                            <p className="product-price">{`${product.price} ${product.rate}`}</p>
+                        </div>
+                        <p className="product-description">{product.description}</p>
+                        <button 
+                            className="add-cart-btn"
+                            onClick={(e) => handleAddToCart(e)}
+                        >
+                            Add to Basket
+                        </button>
+                    </div>
+                )
+            })}
         </div>
     )
 }
