@@ -48,7 +48,7 @@ function App() {
             path="/shop" 
             element={
               <Shop>
-                {productList.map((product, e) => {
+                {productList.map((product) => {
                   return (
                     <div className="product" key={uniqid()}>
                       <img className="product-img" alt={product.name} src={product.image} />
@@ -59,7 +59,6 @@ function App() {
                       <p className="product-description">{product.description}</p>
                       <button 
                         className="add-cart-btn"
-                        e={e}
                         onClick={(e) => handleAddToCart(e)}
                       >
                         Add to Cart
