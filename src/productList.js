@@ -1,5 +1,5 @@
-import kittens from '../assets/images/products/kittens.jpg';
-import bath from '../assets/images/products/bath.jpg';
+import kittens from './assets/images/products/kittens.jpg';
+import bath from './assets/images/products/bath.jpg';
 
 const productList = [
     {
