@@ -43,7 +43,7 @@ function App() {
       <BrowserRouter basename="/shopping-cart">
         <Header productNum={productNum} />
         <Routes>
-          <Route path="/shopping-cart" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route 
             path="/shop" 
             element={
