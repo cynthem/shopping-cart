@@ -1,5 +1,6 @@
 import kittens from './assets/images/products/kittens.jpg';
 import bath from './assets/images/products/bath.jpg';
+import hugs from './assets/images/products/hugs.jpg';
 
 const productList = [
     {
@@ -15,6 +16,13 @@ const productList = [
         rate: "per day",
         image: bath,
         description: "Nothing melts stress away like a warm, soothing bubble bath. Don't have the right tub? No worries! We'll bring one to you and do all the installing. You keep it for up to 24 hours and soak as long as you want. Comes with bubbles and accessories."
+    },
+    {
+        name: "Free Grandma Hugs",
+        price: "??",
+        rate: "gas money",
+        image: hugs,
+        description: "Hard day at work? Grandma will make it better with one of her famous hugs! Depending on how badly the day went, she might lend an ear to your problems and console you (plus more hugs!). This service is free but Grandma asks that you provide gas money and maybe some milk for her cookies."
     }
 ];
 
