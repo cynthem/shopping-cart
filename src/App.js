@@ -50,7 +50,9 @@ function App() {
                         element={
                             <Shop>
                                 {productList.map(e => {
-                                    <Product key={uniqid()} e={e} handleAddToCart={handleAddToCart} />
+                                    return (
+                                      <Product key={uniqid()} e={e} handleAddToCart={handleAddToCart} />
+                                    )
                                 })}
                             </Shop>
                         } 
