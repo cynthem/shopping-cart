@@ -7,7 +7,7 @@ const Header = ({ productNum }) => {
         <div className="header">
             <div className="header-container">
                 <div className="header-navbar">
-                    <Link className="header-home" to="/shopping-cart">Home</Link>
+                    <Link className="header-home" to="/">Home</Link>
                     <Link className="header-shop" to="/shop">Shop</Link>
                     <Link className="basket-icon" to="/cart">
                         <img className="basket-icon" alt="Basket" src={basketIcon} />
