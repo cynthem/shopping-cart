@@ -492,7 +492,7 @@ body {
 
   .home-header {
     font-size: 3.5rem;
-    margin: 0 30px 20px;
+    margin: 0 15px 20px;
     padding-top: 30px;
   }
   
@@ -505,7 +505,7 @@ body {
   }
 
   .home-subheader {
-    margin: 0 50px 0 30px;
+    margin: 0 50px 0 15px;
     padding-top: 30px;
     font-size: 1.5rem;
   }
@@ -513,7 +513,7 @@ body {
   .home-btn {
     font-size: 1.5rem;
     background-color: rgb(210, 109, 0, 0.5);
-    margin-left: 30px;
+    margin-left: 15px;
     margin-top: 80px;
   }
 
